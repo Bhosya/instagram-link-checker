@@ -6,7 +6,7 @@ exports.handler = async (event) => {
 
   try {
     // Ambil data links.json dari GitHub
-    const response = await fetch('https://raw.githubusercontent.com/bhosya/instagram-link-checker/main/links.json');
+    const response = await fetch('https://raw.githubusercontent.com/Bhosya/instagram-link-checker/main/links.json');
     const data = await response.json();
 
     // Cek apakah link sudah ada
@@ -26,7 +26,7 @@ exports.handler = async (event) => {
     });
 
     await octokit.repos.createOrUpdateFileContents({
-      owner: 'bhosya', // Ganti dengan username GitHub kamu
+      owner: 'Bhosya', // Ganti dengan username GitHub kamu
       repo: 'instagram-link-checker',
       path: 'links.json',
       message: 'Add new link',
