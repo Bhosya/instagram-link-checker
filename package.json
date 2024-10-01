@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@octokit/rest": "^21.0.2",
+    "node-fetch": "^3.3.2"
+  },
+  "name": "instagram-link-checker-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
