@@ -31,7 +31,7 @@ exports.handler = async (event) => {
       path: 'links.json',
       message: 'Add new link',
       content: Buffer.from(JSON.stringify(data, null, 2)).toString('base64'),
-      sha: 'SHA_OF_THE_FILE' // Ganti dengan SHA dari file JSON, bisa didapat dari GitHub API
+      sha: 'b42c576104df666103b3fddf89108cf08d91e2c5' // Ganti dengan SHA dari file JSON, bisa didapat dari GitHub API
     });
 
     return {
