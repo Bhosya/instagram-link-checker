@@ -6,7 +6,7 @@ exports.handler = async (event) => {
 
   try {
     // Ambil data links.json dari GitHub
-    const response = await fetch('https://raw.githubusercontent.com/username/instagram-link-checker/main/links.json');
+    const response = await fetch('https://raw.githubusercontent.com/bhosya/instagram-link-checker/main/links.json');
     const data = await response.json();
 
     // Cek apakah link sudah ada
