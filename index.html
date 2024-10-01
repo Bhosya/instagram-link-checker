@@ -43,27 +43,7 @@
 
     <script>
         document.getElementById('linkForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const link = document.getElementById('instagramLink').value.trim();
-
-            // Kirim request POST ke Netlify Function untuk menambah link
-            fetch('/.netlify/functions/addLink', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ link: link })
-            })
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('result').textContent = data.message;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-
-            // Bersihkan input setelah submit
-            document.getElementById('instagramLink').value = '';
+            console.log('asd');
         });
     </script>
 </body>
