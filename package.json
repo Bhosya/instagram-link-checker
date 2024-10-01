@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@octokit/rest": "^21.0.2",
-    "node-fetch": "^3.3.2"
+    "node-fetch": "^2.6.1"
   },
   "name": "instagram-link-checker-main",
   "version": "1.0.0",
