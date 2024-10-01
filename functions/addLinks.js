@@ -22,11 +22,11 @@ exports.handler = async (event) => {
 
     // Update file di GitHub
     const octokit = new Octokit({
-      auth: 'GITHUB_PERSONAL_ACCESS_TOKEN', // Ganti dengan token GitHub kamu
+      auth: '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', // Ganti dengan token GitHub kamu
     });
 
     await octokit.repos.createOrUpdateFileContents({
-      owner: 'username', // Ganti dengan username GitHub kamu
+      owner: 'bhosya', // Ganti dengan username GitHub kamu
       repo: 'instagram-link-checker',
       path: 'links.json',
       message: 'Add new link',
