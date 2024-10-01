@@ -1,7 +1,8 @@
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
 const { Octokit } = require('@octokit/rest');
 
 exports.handler = async (event) => {
+  const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
   const { link } = JSON.parse(event.body);
 
   try {
