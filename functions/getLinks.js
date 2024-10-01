@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 
 exports.handler = async () => {
   try {
-    const response = await fetch('https://raw.githubusercontent.com/username/instagram-link-checker/main/links.json');
+    const response = await fetch('https://raw.githubusercontent.com/Bhosya/instagram-link-checker/main/links.json');
     const data = await response.json();
     return {
       statusCode: 200,
